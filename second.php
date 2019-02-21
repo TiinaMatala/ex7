@@ -28,9 +28,8 @@ $names=array('Jim', 'Lisa', 'Bob');
 ?>
 <?php print_r($persons); ?>
 <p>Lastnames:</p>
-<?php
-$lastnames=array('Smith', 'Simpson', 'Jones');
-?>
-<?php foreach ($lastnames as $row) {
-echo '<br>'.$row.'<br>';
-} ?>
+  <?php
+  foreach ($persons as $row) {
+    echo '<br>'.$row['ln'].'<br>';
+  }
+  ?>
